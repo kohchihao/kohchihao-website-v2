@@ -3,7 +3,6 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: ['gatsby-plugin-react-helmet'],
-  
-  pathPrefix: `/kohchihao-website-v2`,
+  pathPrefix: '/kohchihao-website-v2',
   
 };
