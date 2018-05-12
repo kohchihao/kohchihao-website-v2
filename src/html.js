@@ -1,4 +1,5 @@
 import React from "react"
+import favicon from '../img/android.ico';
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -33,11 +34,11 @@ module.exports = class HTML extends React.Component {
           {this.props.headComponents}
           {css}
           
-	        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+	        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
           
           <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
-          
+          <link rel="icon" href={favicon}/>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
