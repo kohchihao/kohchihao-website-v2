@@ -11,6 +11,7 @@ import scoot from '../../img/scoot.png';
 import apollo from '../../img/apollo.png';
 import nusbuses from '../../img/nusbuses.jpg';
 import anteprints from '../../img/anteprints.png';
+import zaobao from '../../img/zaobao.pdf';
 
 
 const tech = [
@@ -245,6 +246,35 @@ const clientList = client.map((data) =>
   </div>
 )
 
+const appear = [
+  {
+    title: 'Vulcan Post - This NSF Built A Telegram Bot To Let Us Know When SMRT Fails Because "Where Got Time?"',
+    url: 'https://goo.gl/4zD6Wx'
+  },
+  {
+    title: 'Hype & Stuff - Telegram MRT Bot: An NSF Created An App So That You Don’t Break Down When The MRT Does.',
+    url : 'https://goo.gl/oiE18K'
+  },
+  {
+    title: 'LianHe ZaoBao - 青年设计手机应用 改善大学生通勤',
+    url: zaobao
+  }
+]
+
+const appearList = appear.map((data) => 
+  <div>
+    {/* <br></br>
+    <p className="lead">{data.title} <a href={data.url}>LINK</a></p> */}
+    <div className="card waves-light">
+      <div className="card-content">
+        <p style={{fontWeight: 400}}>{data.title}</p>
+      </div>
+      <div className="card-action">
+        <a href={data.url}>Read more</a>
+      </div>
+    </div>
+  </div>
+)
 
 const IndexPage = () => (
   <div>
@@ -286,14 +316,16 @@ const IndexPage = () => (
             <div className="col l12  m12 s12">
 
               <h3>Appeared On</h3>
-
-              <br></br>
+              
+             
+              {appearList}
+              {/* <br></br>
               <p className="lead">Vulcan Post - This NSF Built A Telegram Bot To Let Us Know
               When SMRT Fails Because "Where Got Time? <a href="https://goo.gl/4zD6Wx">https://goo.gl/4zD6Wx</a></p>
 
               <br></br>
-              <p className="lead">Hype & Stuff - Tel egram MRT Bot: An NSF Created An App So That You Don’t Break Down When The MRT Does. <a href="https://goo.gl/oiE18K">https://goo.gl/oiE18K</a></p>
-
+              <p className="lead">Hype & Stuff - Tel egram MRT Bot: An NSF Created An App So That You Don’t Break Down When The MRT Does. <a href="https://goo.gl/oiE18K">https://goo.gl/oiE18K</a></p> */}
+              
             </div>
           </div>
         </div>
