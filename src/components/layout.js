@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from './Header/index';
 
@@ -30,9 +29,5 @@ const TemplateWrapper = ({ children }) => (
     </div>
   </div>
 );
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-};
 
 export default TemplateWrapper;
