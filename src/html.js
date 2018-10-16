@@ -1,26 +1,9 @@
 import React, {Component} from "react"
 import favicon from '../img/android.ico';
 
-let stylesStr
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
-  }
-}
-
 export default class HTML extends Component {
   render() {
-    let css
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      )
-    }
+    
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -32,7 +15,7 @@ export default class HTML extends Component {
           />
           <meta name='theme-color' content='#212936'/>
           {this.props.headComponents}
-          {css}
+          
           
 	        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
