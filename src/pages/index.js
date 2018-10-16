@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Footer from '../components/Footer/index.js'
+
+import Layout from "../components/layout"
+import Footer from '../components/Footer'
 
 import resume from '../../img/resume.pdf';
 import sgcheckpoint from '../../img/sgcheckpoint.png';
@@ -13,6 +14,7 @@ import nusbuses from '../../img/nusbuses.jpg';
 import anteprints from '../../img/anteprints.png';
 import zaobao from '../../img/zaobao.pdf';
 
+import TechList from '../components/TechList';
 
 const tech = [
   {
@@ -277,6 +279,9 @@ const appearList = appear.map((data) =>
 )
 
 const IndexPage = () => (
+  <Layout>
+
+  
   <div>
     <div className="container-fluid">
       <div className="intro blue-blue">
@@ -367,7 +372,7 @@ const IndexPage = () => (
 
     <Footer/>
   </div>
-
+  </Layout>
 )
 
 export default IndexPage

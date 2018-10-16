@@ -1,16 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import {
-  Navbar,
-  NavItem,
-  Icon
-} from 'react-materialize'
+import React from 'react';
+import { Icon } from 'react-materialize';
 
 const Footer = () => (
   <div className="footer">
-    <Icon center className="heart">favorite</Icon>
+    <Icon center className="heart">
+      favorite
+    </Icon>
     <p>Created with Love by Marcus Koh Chi Hao</p>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

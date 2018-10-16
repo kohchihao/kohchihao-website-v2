@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import favicon from '../img/android.ico';
 
 let stylesStr
@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
-module.exports = class HTML extends React.Component {
+export default class HTML extends Component {
   render() {
     let css
     if (process.env.NODE_ENV === `production`) {
@@ -51,7 +51,7 @@ module.exports = class HTML extends React.Component {
 
           
 	          <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         </body>
       </html>
     )
