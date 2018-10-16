@@ -112,8 +112,8 @@ const project = [
   },
 ]
 
-const projectList = project.map(data => (
-  <div className="col l4 m6 s12">
+const projectList = project.map((data,i) => (
+  <div key={i} className="col l4 m6 s12">
     <div className="card medium sticky-action">
       <div className="card-image waves-effect waves-block waves-light">
         <img className="activator" src={data.img} alt="" />
@@ -139,8 +139,8 @@ const projectList = project.map(data => (
       </div>
 
       <div className="card-action">
-        {data.url.map(url => (
-          <a target="_blank" href={url.url}>
+        {data.url.map((url,ii) => (
+          <a key={ii} target="_blank" href={url.url}>
             {url.url_title}
           </a>
         ))}
@@ -166,8 +166,8 @@ const client = [
   },
 ]
 
-const clientList = client.map(data => (
-  <div className="col l4 m6 s12">
+const clientList = client.map((data,i) => (
+  <div key={i} className="col l4 m6 s12">
     <div className="card medium sticky-action">
       <div className="card-image waves-effect waves-block waves-light">
         <img className="activator" src={data.img} alt=""/>
@@ -196,8 +196,8 @@ const clientList = client.map(data => (
       </div>
 
       <div className="card-action">
-        {data.url.map(url => (
-          <a target="_blank" href={url.url}>
+        {data.url.map((url,ii) => (
+          <a key={ii} target="_blank" href={url.url}>
             {url.url_title}
           </a>
         ))}

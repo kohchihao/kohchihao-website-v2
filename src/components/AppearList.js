@@ -18,8 +18,8 @@ const appear = [
   }
 ];
 
-const appearList = appear.map(data => (
-  <div>
+const appearList = appear.map((data,i) => (
+  <div key={i}>
     <div className="card waves-light">
       <div className="card-content">
         <p style={{ fontWeight: 400 }}>{data.title}</p>

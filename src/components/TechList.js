@@ -46,8 +46,8 @@ const tech = [
     name: 'devicon-illustrator-plain colored'
   }
 ];
-const techList = tech.map(data => (
-  <button className="tech btn-large tooltipped white" data-tooltip={data.type}>
+const techList = tech.map((data,i) => (
+  <button key={i} className="tech btn-large tooltipped white" data-tooltip={data.type}>
     <i className={data.name} />
   </button>
 ));
