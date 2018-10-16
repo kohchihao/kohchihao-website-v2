@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import Header from './Header/index';
 
 import '../layouts/starter.css';
-import '../layouts/index.css';
 import 'materialize-css/dist/css/materialize.css';
 
 if (typeof window !== 'undefined') {
