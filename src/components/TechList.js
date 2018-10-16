@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const tech = [
   {
@@ -44,26 +44,25 @@ const tech = [
   {
     type: 'Illustrator',
     name: 'devicon-illustrator-plain colored'
-  },
-
-]
-const techList = tech.map((data) =>
-  <button className="tech btn-large tooltipped white" data-tooltip={data.type}><i className={data.name}></i></button>
-);
+  }
+];
+const techList = tech.map(data => (
+  <button className="tech btn-large tooltipped white" data-tooltip={data.type}>
+    <i className={data.name} />
+  </button>
+));
 
 const TechList = () => (
   <div className="intro blue-blue" id="technology">
-      <div className="container">
-        <div className="row">
-          <div className="col l12  m12 s12">
-            <h3>Technologies i use before</h3>
-
-            {techList}
-
-          </div>
+    <div className="container">
+      <div className="row">
+        <div className="col l12  m12 s12">
+          <h3>Technologies i use before</h3>
+          {techList}
         </div>
       </div>
     </div>
+  </div>
 );
 
 //make this component available to the app
