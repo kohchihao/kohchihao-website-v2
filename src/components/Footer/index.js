@@ -6,7 +6,7 @@ const Footer = () => (
     <Icon center className="heart">
       favorite
     </Icon>
-    <p>Created with Love by Marcus Koh Chi Hao</p>
+    <p>Created with love by Marcus Koh Chi Hao</p>
   </div>
 );
 

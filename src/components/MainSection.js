@@ -14,11 +14,14 @@ const MainSection = () => (
               I like to code and develop mobile apps as well as chatbots during
               my weekends. Coding gives me the ability to create anything that i
               can think of. You are limited only by your own imagination. <br />
-              <br />Currently I'm studying in NUS Computer Science Year 1! Feel
+              <br />I love building React Native Apps, Android Apps and Telegram
+              chatbots. <br />
+              <br />Currently I'm studying in NUS Computer Science Year 2!
+              Specializing in Software Engineering and Database Management. Feel
               free to chat me up about anything technology.
             </p>
 
-            <p>If you are keen to chat you can ping me at, Telegram or Email</p>
+            <p>If you are keen to chat you can ping me at Telegram or Email</p>
 
             <a
               href="https://t.me/kohchihao"
