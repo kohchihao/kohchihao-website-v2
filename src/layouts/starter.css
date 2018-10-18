@@ -5,8 +5,6 @@
   }
 }
 
-
-
 .footer {
   text-align:center;
   padding-top: 10px;
@@ -33,8 +31,6 @@
 .email {
   margin-left: 10px;
 }
-
-
 
 .blue-blue {
   background-color: #212936;
@@ -83,4 +79,34 @@
 }
 .projects .card .card-action a {
     color: #E91E63 !important
+}
+
+/* ======= Used in layout.js ======== */
+.wrapper1 {
+  background-color: #000000;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 0;
+}
+
+.wrapper2 {
+  background-color:#212936;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0px;
+  padding-top: 0;
+}
+
+/* Used for white text and setting correct font */
+p {
+  color: #ffffff;
+}
+
+body {
+  color: white;
+}
+
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }

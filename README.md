@@ -23,3 +23,9 @@ module.exports = {
 }
 ```
 - Now run `yarn deploy` or `npm run deploy`
+
+## CI/CD with Netlify 
+
+- Added Netlify to this `repo` 
+- Every PR will now have its own Netlify url. 
+- https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/
