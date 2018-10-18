@@ -1,3 +1,6 @@
+# Koh Chi Hao personal site
+
+[![Build Status](https://travis-ci.org/kohchihao/kohchihao-website-v2.svg?branch=master)](https://travis-ci.org/kohchihao/kohchihao-website-v2)
 
 ## Deploy
 
