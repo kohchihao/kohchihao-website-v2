@@ -1,26 +1,9 @@
-import React from "react"
+import React, {Component} from "react"
 import favicon from '../img/android.ico';
 
-let stylesStr
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
-  } catch (e) {
-    console.log(e)
-  }
-}
-
-module.exports = class HTML extends React.Component {
+export default class HTML extends Component {
   render() {
-    let css
-    if (process.env.NODE_ENV === `production`) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      )
-    }
+    
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -32,7 +15,7 @@ module.exports = class HTML extends React.Component {
           />
           <meta name='theme-color' content='#212936'/>
           {this.props.headComponents}
-          {css}
+          
           
 	        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
@@ -51,7 +34,7 @@ module.exports = class HTML extends React.Component {
 
           
 	          <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         </body>
       </html>
     )
