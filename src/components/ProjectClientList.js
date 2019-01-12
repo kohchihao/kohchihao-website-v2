@@ -8,6 +8,7 @@ import scoot from '../../img/scoot.png';
 import apollo from '../../img/apollo.png';
 import nusbuses from '../../img/nusbuses.jpg';
 import anteprints from '../../img/anteprints.png';
+import foodbites from '../../img/foodbites.jpg';
 
 const project = [
   {
@@ -43,10 +44,27 @@ const project = [
     ]
   },
   {
+    img: foodbites,
+    name: 'FoodBites',
+    description: 'FoodBites aim to reduce food wastage by connecting food stall owners like bakeries, restaurants or even old chang kee to consumers through an mobile application',
+    tech: 'Expo.io, React, Firebase',
+    url: [
+      {
+        url_title: 'Visit Github',
+        url: 'https://github.com/kohchihao/Foodies-FoodBites'
+      },
+      {
+        url_title: 'Visit App',
+        url: 'https://expo.io/@kohchihao/FoodBites'
+      },
+
+    ]
+  },
+  {
     img: sgbusbot,
     name: 'SG BusBot',
     description: 'A bot to retrieve bus arrival timings either based on the bus code or your current location',
-    tech: 'elegram, NodeJS, Google Cloud',
+    tech: 'Telegram, NodeJS, Google Cloud',
     url: [
       {
         url_title: 'Visit Telegram',
