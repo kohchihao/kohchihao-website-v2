@@ -1,27 +1,50 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Footer from '../components/Footer';
 
 import MainSection from '../components/MainSection';
 import TechList from '../components/TechList';
 import AppearList from '../components/AppearList';
 import ProjectClientList from '../components/ProjectClientList';
+import { graphql } from 'gatsby';
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = (props) => (
+  <Layout {...props}>
     <div>
-      <MainSection />
+      <MainSection author={props.data.site.siteMetadata.author}/>
 
-      <AppearList />
+      {/* <AppearList />
 
       <TechList />
 
-      <ProjectClientList />
-
-      <Footer />
+      <ProjectClientList /> */}
     </div>
   </Layout>
 );
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        author {
+          name
+          bio
+          email
+          github
+          linkedIn
+          medium
+          telegram
+          gravatar
+        }
+        description
+        siteUrl
+        navigation {
+          value
+          link
+        }
+      }
+    }
+  }
+`;

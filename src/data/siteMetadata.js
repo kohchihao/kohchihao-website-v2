@@ -3,14 +3,14 @@ module.exports = {
   description: 'Software Engineer',
   author: {
     name: 'Koh Chi Hao',
-    bio: 'Freelance Mobile Developer @ <a href="https://www.arklabs.nz">Ark Labs</a><br/>Auckland, New Zealand',
+    bio: 'Software Engineer that loves mobile and frontend development. <br> NUS Computer Science Y3',
     homeCity: 'Singapore',
     email: 'kohchihao@gmail.com',
     github: 'https://github.com/kohchihao',
     linkedIn: 'https://www.linkedin.com/in/kohchihao/',
     medium: 'https://medium.com/@kohchihao',
     telegram: 'https://t.me/kohchihao',
-    gravatar: 'https://gravatar.com/avatar/62719e08d61b734d65b0e94c19f1235a?s=400'
+    gravatar: 'https://gravatar.com/avatar/62719e08d61b734d65b0e94c19f1235a?s=300'
   },
   sourceCodeLink: 'https://github.com/kohchihao/josh.app',
   navigation: [
