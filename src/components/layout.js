@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Header from './Header';
 import Footer from './Footer';
 
-import '../../static/css/starter.css';
+import '../../static/css/style.css';
 
 
 if (typeof window !== 'undefined') {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import resume from '../../img/resume.pdf';
 
 const ResumeSection = () => (
   <Container className="ResumeSectionContainer">
@@ -21,7 +22,7 @@ const ResumeSection = () => (
           <Row>
             <Col xs={12}>
               <Button className="downloadButton" variant="primary">
-                Download
+                <a href={resume}>Download</a>
               </Button>
             </Col>
           </Row>

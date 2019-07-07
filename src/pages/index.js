@@ -4,20 +4,20 @@ import Layout from '../components/layout';
 
 import MainSection from '../components/MainSection';
 import TechList from '../components/TechList';
-import AppearList from '../components/AppearList';
+import FeaturedSection from '../components/FeaturedSection';
 import ProjectClientList from '../components/ProjectClientList';
 import { graphql } from 'gatsby';
 import ResumeSection from '../components/ResumeSection';
 
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout {...props}>
     <div>
-      <MainSection author={props.data.site.siteMetadata.author}/>
+      <MainSection author={props.data.site.siteMetadata.author} />
 
       <ResumeSection />
-      {/* <AppearList />
+      <FeaturedSection />
 
-      <TechList />
+      {/*<TechList />
 
       <ProjectClientList /> */}
     </div>
