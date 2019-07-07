@@ -7,12 +7,14 @@ import TechList from '../components/TechList';
 import AppearList from '../components/AppearList';
 import ProjectClientList from '../components/ProjectClientList';
 import { graphql } from 'gatsby';
+import ResumeSection from '../components/ResumeSection';
 
 const IndexPage = (props) => (
   <Layout {...props}>
     <div>
       <MainSection author={props.data.site.siteMetadata.author}/>
 
+      <ResumeSection />
       {/* <AppearList />
 
       <TechList />
