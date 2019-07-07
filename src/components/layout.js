@@ -1,9 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Header from './Header/index';
+import Header from './Header';
+import Footer from './Footer';
 
-import '../layouts/starter.css';
-import 'materialize-css/dist/css/materialize.css';
+import '../../static/css/starter.css';
+
 
 if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
@@ -11,23 +12,39 @@ if (typeof window !== 'undefined') {
   require('smooth-scroll')('a[href*="#"]');
 }
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Koh Chi Hao"
-      meta={[
-        { name: 'description', content: "Koh Chi Hao's portfolio website." },
-        { name: 'keywords', content: 'koh chi hao' }
-      ]}
-    />
+const Layout = props => {
+  const { children } = props;
+  const { author, siteUrl, description } = props.data.site.siteMetadata;
+  const { navigation }  = props.data.site.siteMetadata;
 
-    <Header />
-    <div className="wrapper1">
-      <div className="wrapper2">
-        {children}
-      </div>
+  return (
+    <div>
+      <Helmet
+        title={author.name}
+        meta={[{ name: 'keywords', content: 'koh chi hao' }]}
+      >
+        <meta name="author" content={author.name} />
+        <meta name="description" content={description} />
+        <meta property="og:title" content={author.name} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={author.gravatar} />
+
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+      </Helmet>
+
+      <Header navigation={navigation} name={author.name}/>
+      <div className="wrapper">{children}</div>
+
+      <Footer />
     </div>
-  </div>
-);
+  );
+};
 
-export default TemplateWrapper;
+export default Layout;

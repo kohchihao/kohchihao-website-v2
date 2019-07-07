@@ -1,20 +1,25 @@
-import React from 'react'
-import {
-  Navbar,
-  NavItem
-} from 'react-materialize'
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const Header = () => (
-  <div className='blue-blue' >
-    <div className='container'>
-      <Navbar brand='Koh Chi Hao' className='blue-blue' right options={{ closeOnClick: true }}>
-        <NavItem href='#'>Home</NavItem>
-        <NavItem href='#appeared'>Appeared</NavItem>
-        <NavItem href='#technology'>Technology</NavItem>
-        <NavItem href='#projects'>Projects</NavItem>
-      </Navbar>
-    </div>
-  </div>
-)
+const Header = props => {
+  const navigations = props.navigation;
+  const name = props.name;
 
-export default Header
+  const menuList = navigations.map((menu, i) => (
+    <Nav.Link href={menu.link}>{menu.value}</Nav.Link>
+  ));
+
+  return (
+    <Navbar bg="white" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">{name}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">{menuList}</Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Header;

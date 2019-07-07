@@ -1,7 +1,7 @@
+const siteMetadata = require('./src/data/siteMetadata');
+
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Default Starter',
-  },
+  siteMetadata,
   plugins: ['gatsby-plugin-react-helmet',
   {
     resolve: `gatsby-plugin-google-analytics`,
