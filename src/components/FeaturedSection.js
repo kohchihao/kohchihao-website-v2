@@ -13,9 +13,8 @@ const featuredList = featured.data.map((data, i) => (
       </Row>
       <Row>
         <Col>
-          <Button className="readMoreButton" variant="light">
-            
-            <a href={data.url}>Read More</a>
+          <Button className="readMoreButton" variant="light" href={data.url}>
+            Read More
           </Button>
         </Col>
       </Row>

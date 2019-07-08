@@ -21,8 +21,8 @@ const ResumeSection = () => (
 
           <Row>
             <Col xs={12}>
-              <Button className="downloadButton" variant="primary">
-                <a href={resume}>Download</a>
+              <Button className="downloadButton" variant="primary" href={resume}>
+                Download
               </Button>
             </Col>
           </Row>
