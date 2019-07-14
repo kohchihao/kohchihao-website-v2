@@ -144,3 +144,121 @@ h3 {
   color: black;
   text-decoration: none;
 }
+/* Featured Section End */
+
+/* Project Client Section */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.content .title {
+  margin-bottom: 0.5em !important;
+  font-family: Montserrat, sans-serif;
+}
+
+.content .description {
+  line-height: 2em;
+}
+
+.image {
+  padding: 0;
+  right: 35px;
+  position: absolute;
+}
+
+.product-image {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-fit: cover;
+  object-position: 100% 0;
+  width: 300px !important;
+}
+
+.product {
+  padding: 1rem;
+  float: left;
+  width: 360px;
+}
+
+.project {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  color: #fff;
+  border-radius: 12px !important;
+  padding: 2rem 1.5rem 2rem 3rem;
+}
+
+@media only screen and (max-width: 730px) {
+  .product-image {
+    max-height: 250px !important;
+    width: 100% !important;
+  }
+
+  .image {
+    position: relative !important;
+    left: 0;
+  }
+
+  .product {
+    width: 90% !important;
+    margin-left: 5% !important;
+    text-align: center;
+    float: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 731px) {
+  .content,
+  .product {
+    width: 300px !important;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
+
+.faButton {
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.foodbites {
+  background-color: #c62828;
+}
+
+.nusbuses {
+  background-color: #f57c00;
+}
+
+.sgcheckpoint {
+  background-color: #ff9800;
+}
+
+.sgbusbot {
+  background-color: #2196f3;
+}
+
+.sgmrt {
+  background-color: #2196f3;
+}
+
+.push2me {
+  background-color: #E91E63;
+}
+
+.scoot {
+  background-color: #ffc107;
+}
+
+.apollo {
+  background-color: #424242;
+}

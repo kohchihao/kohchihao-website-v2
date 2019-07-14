@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import featured from '../data/featuredSectionData';
-import zaobao from '../../img/zaobao.pdf';
 
 const featuredList = featured.data.map((data, i) => (
   <Col xs={12} md={5} lg={4}>
