@@ -12,7 +12,7 @@ import ResumeSection from '../components/ResumeSection';
 const IndexPage = props => (
   <Layout {...props}>
     <div>
-      <MainSection author={props.data.site.siteMetadata.author} />
+      <MainSection  />
 
       <ResumeSection />
       <FeaturedSection />
@@ -25,28 +25,3 @@ const IndexPage = props => (
 );
 
 export default IndexPage;
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        author {
-          name
-          bio
-          email
-          github
-          linkedIn
-          medium
-          telegram
-          gravatar
-        }
-        description
-        siteUrl
-        navigation {
-          value
-          link
-        }
-      }
-    }
-  }
-`;

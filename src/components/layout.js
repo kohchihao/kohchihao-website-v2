@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 import '../../static/css/style.css';
-
+import { useSiteMetadata } from './hooks/useSiteMetadata';
 
 if (typeof window !== 'undefined') {
   // Make scroll behavior of internal links smooth
@@ -14,8 +14,8 @@ if (typeof window !== 'undefined') {
 
 const Layout = props => {
   const { children } = props;
-  const { author, siteUrl, description } = props.data.site.siteMetadata;
-  const { navigation }  = props.data.site.siteMetadata;
+  const { author, siteUrl, description } = useSiteMetadata();
+  const { navigation }  = useSiteMetadata();
 
   return (
     <div>

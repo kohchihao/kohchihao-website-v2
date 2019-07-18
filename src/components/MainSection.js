@@ -8,10 +8,12 @@ import {
   FaTelegramPlane,
   FaFilePdf
 } from 'react-icons/fa';
+import { useSiteMetadata } from './hooks/useSiteMetadata';
 
 import { MdMail } from 'react-icons/md';
 
 const MainSection = props => {
+  const { author } = useSiteMetadata();
   const {
     name,
     bio,
@@ -21,7 +23,7 @@ const MainSection = props => {
     medium,
     telegram,
     gravatar
-  } = props.author;
+  } = author;
 
   return (
     <Container className="MainSectionContainer">
@@ -74,17 +76,12 @@ const MainSection = props => {
               </li>
 
               <li>
-              <a
-                  href={resume}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
+                <a href={resume} target="_blank" rel="noreferrer noopener">
                   <FaFilePdf />
                 </a>
               </li>
             </ul>
           </Row>
-          
         </Col>
       </Row>
     </Container>

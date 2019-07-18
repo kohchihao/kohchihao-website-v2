@@ -95,7 +95,7 @@ const projectList = projects.data.map((project, i) => {
 });
 
 const ProjectClientSection = () => (
-  <Container>
+  <Container id="projects">
     <Row className="h2Header">
       <Col xs={12}>
         <span>Projects</span>
