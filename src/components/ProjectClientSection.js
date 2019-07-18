@@ -10,7 +10,14 @@ import TwitterButton from './buttons/TwitterButton';
 
 import projects from '../data/projectSectionData';
 
-const Post = ({ src, title, description, backgroundColorClass, urls }) => {
+const Post = ({
+  src,
+  title,
+  description,
+  tech,
+  backgroundColorClass,
+  urls
+}) => {
   return (
     <Container className={'project ' + backgroundColorClass}>
       <div className="image">
@@ -32,15 +39,21 @@ const Post = ({ src, title, description, backgroundColorClass, urls }) => {
           </p>
 
           <p className="description">
-            <span>{'Android, React Native, Glitch, Firebase'}</span>
+            <span>{tech}</span>
           </p>
 
           <Row>
-            <Col>
-              {urls.map((url, ii) => (
-                <Buttons key={ii} url_link={url.url} url_type={url.url_type} />
-              ))}
-            </Col>
+              {urls.map((url, ii) => {
+                return (
+                  <Col>
+                    <Buttons
+                      key={ii}
+                      url_link={url.url}
+                      url_type={url.url_type}
+                    />
+                  </Col>
+                );
+              })}
           </Row>
         </div>
       </div>
@@ -74,6 +87,7 @@ const projectList = projects.data.map((project, i) => {
       src={project.img}
       title={project.name}
       description={project.description}
+      tech={project.tech}
       backgroundColorClass={project.backgroundColorClass}
       urls={project.urls}
     />
