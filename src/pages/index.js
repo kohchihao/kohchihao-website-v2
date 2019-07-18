@@ -15,9 +15,8 @@ const IndexPage = props => (
       <MainSection  />
 
       <ResumeSection />
-      <FeaturedSection />
 
-      {/*<TechList />*/}
+      <FeaturedSection />
 
       <ProjectClientSection /> 
     </div>

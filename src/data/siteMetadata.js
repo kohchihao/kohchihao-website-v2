@@ -19,12 +19,8 @@ module.exports = {
       link: '#home'
     },
     {
-      value: 'Appeared',
-      link: '#appeared'
-    },
-    {
-      value: 'Technology',
-      link: '#technology'
+      value: 'Featured',
+      link: '#featured'
     },
     {
       value: 'Projects',
