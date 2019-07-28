@@ -22,7 +22,7 @@ const featuredList = featured.data.map((data, i) => (
 ));
 
 const FeaturedSection = () => (
-  <Container>
+  <Container id="featured">
     <Row className="h2Header">
       <Col xs={12}>
         <span>Featured On</span>
