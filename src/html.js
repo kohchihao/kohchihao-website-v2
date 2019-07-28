@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import favicon from '../img/android.ico';
 import apple57 from '../img/ico/apple-icon-57x57.png';
 import apple60 from '../img/ico/apple-icon-60x60.png';
 import apple72 from '../img/ico/apple-icon-72x72.png';
