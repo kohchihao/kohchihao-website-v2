@@ -23,7 +23,6 @@ const Post = ({
     <Container className={'project ' + backgroundColorClass}>
       <div className="image">
         <Image className="product-image" filename={src} />
-        {/* <img className="product-image" src={src} alt="welcome" /> */}
       </div>
 
       <div className="product">

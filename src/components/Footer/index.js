@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footerBox">
         <span>
           {'Made with '} <FaHeart className="heartIcon" /> {' and '}
-          <a href="https://www.gatsbyjs.org/" target="_blank">
+          <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
             <img
               src={withPrefix('/img/gatsbyjs.svg')}
               alt="Gatsby"
@@ -24,7 +24,7 @@ const Footer = () => {
         </span>
 
         <div className="pull-right">
-          <a href={author.github} target="_blank">
+          <a href={author.github} target="_blank" rel="noopener noreferrer">
             <FaGithub className="githubIcon" />
           </a>
         </div>
