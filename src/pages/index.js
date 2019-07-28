@@ -1,25 +1,21 @@
 import React from 'react';
-
 import Layout from '../components/layout';
-import Footer from '../components/Footer';
-
 import MainSection from '../components/MainSection';
 import TechList from '../components/TechList';
-import AppearList from '../components/AppearList';
-import ProjectClientList from '../components/ProjectClientList';
+import FeaturedSection from '../components/FeaturedSection';
+import ProjectClientSection from '../components/ProjectClientSection';
+import ResumeSection from '../components/ResumeSection';
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = props => (
+  <Layout {...props}>
     <div>
-      <MainSection />
+      <MainSection  />
 
-      <AppearList />
+      <ResumeSection />
 
-      <TechList />
+      <FeaturedSection />
 
-      <ProjectClientList />
-
-      <Footer />
+      <ProjectClientSection /> 
     </div>
   </Layout>
 );
