@@ -7,7 +7,7 @@ const WebsiteButton = () => {
   return (
     <Button variant="light">
       <IoMdBrowsers className="faButton" />
-      <span>Homepage</span>
+      <span>Website</span>
     </Button>
   );
 };
