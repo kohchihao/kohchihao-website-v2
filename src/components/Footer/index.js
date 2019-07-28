@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaHeart, FaGithub } from 'react-icons/fa';
-import { withPrefix } from 'gatsby';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
           {'Made with '} <FaHeart className="heartIcon" /> {' and '}
           <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
             <img
-              src={withPrefix('/img/gatsbyjs.svg')}
+              src={'../../../img/gatsbyjs.svg'}
               alt="Gatsby"
               className="gatsbyIcon"
             />
