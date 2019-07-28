@@ -12,6 +12,7 @@ export default {
   data: [
     {
       img: nusbuses,
+      img_path: 'nusbuses.jpg',
       name: 'NUS Buses',
       description:
         'A realtime NUS Buses arrival app. Redesigned and redeveloped.',
@@ -32,6 +33,7 @@ export default {
     },
     {
       img: sgcheckpoint,
+      img_path: 'sgcheckpoint.png',
       name: 'SG Checkpoint',
       description:
         "An android app to check the traffic flow @ singapore's checkpoint",
@@ -53,6 +55,7 @@ export default {
     },
     {
       img: foodbites,
+      img_path: 'foodbites.jpg',
       name: 'FoodBites',
       description:
         'FoodBites aim to reduce food wastage by connecting food stall owners like bakeries, restaurants or even old chang kee to consumers through an mobile application',
@@ -73,6 +76,7 @@ export default {
     },
     {
       img: sgbusbot,
+      img_path: 'sgbusbot.png',
       name: 'SG BusBot',
       description:
         'A bot to retrieve bus arrival timings either based on the bus code or your current location',
@@ -88,6 +92,7 @@ export default {
     },
     {
       img: sgmrt,
+      img_path: 'sgmrt.png',
       name: 'SG MRT',
       description:
         'A telegram bot to retrieve MRT arrival timings based on mrt stations',
@@ -103,6 +108,7 @@ export default {
     },
     {
       img: push2me,
+      img_path: 'push2me.jpg',
       name: 'Push2Me',
       description:
         'A telegram bot that can send you messages/images when you ping the url given to you',
@@ -118,6 +124,7 @@ export default {
     },
     {
       img: scoot,
+      img_path: 'scoot.png',
       name: 'Scoot Notifier',
       description:
         'The purpose of this script is to scrap flyscoot.com to get the cheapest deals from SG to Bangkok. It uses osmosis as the base scraper and chalk to beautify the text. It also sends you a telegram notification when the cheapest deals are met',
@@ -133,6 +140,7 @@ export default {
     },
     {
       img: apollo,
+      img_path: 'apollo.png',
       name: 'ApolloBot',
       description:
         'This bot will post Space Mission Apollo17 images on a daily basis',

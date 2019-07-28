@@ -9,6 +9,7 @@ import TelegramButton from './buttons/TelegramButton';
 import TwitterButton from './buttons/TwitterButton';
 
 import projects from '../data/projectSectionData';
+import Image from './Image';
 
 const Post = ({
   src,
@@ -21,7 +22,8 @@ const Post = ({
   return (
     <Container className={'project ' + backgroundColorClass}>
       <div className="image">
-        <img className="product-image" src={src} alt="welcome" />
+        <Image className="product-image" filename={src} />
+        {/* <img className="product-image" src={src} alt="welcome" /> */}
       </div>
 
       <div className="product">
@@ -84,7 +86,7 @@ const projectList = projects.data.map((project, i) => {
   return (
     <Post
       key={i}
-      src={project.img}
+      src={project.img_path}
       title={project.name}
       description={project.description}
       tech={project.tech}
