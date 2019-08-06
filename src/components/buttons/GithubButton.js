@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { FaGithub } from 'react-icons/fa';
 
-const GithubButton = () => {
+const GithubButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link}>
       <FaGithub className="faButton" />
       <span>GitHub</span>
     </Button>

@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { FaGooglePlay } from 'react-icons/fa';
 
-const GooglePlayButton = () => {
+const GooglePlayButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link} >
       <FaGooglePlay className="faButton" />
       <span>Download</span>
     </Button>

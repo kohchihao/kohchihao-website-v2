@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { FaTelegram } from 'react-icons/fa';
 
-const TelegramButton = () => {
+const TelegramButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link}>
       <FaTelegram className="faButton" />
       <span>Telegram</span>
     </Button>
