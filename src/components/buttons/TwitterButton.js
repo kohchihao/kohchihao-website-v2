@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { FaTwitter } from 'react-icons/fa';
 
-const TwitterButton = () => {
+const TwitterButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link}>
       <FaTwitter className="faButton" />
       <span>Twitter</span>
     </Button>

@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { IoMdBrowsers } from 'react-icons/io';
 
-const WebsiteButton = () => {
+const WebsiteButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link}>
       <IoMdBrowsers className="faButton" />
       <span>Website</span>
     </Button>

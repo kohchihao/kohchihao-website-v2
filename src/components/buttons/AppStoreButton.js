@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import { FaApple } from 'react-icons/fa';
 
-const AppStoreButton = () => {
+const AppStoreButton = ({url_link}) => {
   return (
-    <Button variant="light">
+    <Button variant="light" href={url_link}>
       <FaApple className="faButton" />
       <span>Download</span>
     </Button>
